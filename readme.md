@@ -38,25 +38,25 @@ https://www.jenkins.io/doc/book/installing/docker/
 
 To enable communication between Jenkins running as a container and Docker Desktop on the host machine, we use an Alpine/socat container to forward traffic. This setup allows us to run Jenkins on top of Docker while simultaneously using Docker as a cloud agent.
 
-### Docker Host Configuration
+- Docker Host Configuration
 
 1. When running Jenkins as a container, specify the unix or tcp address of the Docker host in the Docker host URI field.
 
    - Note: The Jenkins container cannot directly reach the Docker host's unix port.
 
-### Socat Container Setup
+- Socat Container Setup
 
 2. Run an additional container to mediate between the Docker host and the Jenkins container. This container will expose the Docker host's unix port as its tcp port.
 
    - Follow the instructions in the [alpine/socat container documentation](https://hub.docker.com/r/alpine/socat/) to create the socat container.
 
-### Jenkins Docker Configuration
+- Jenkins Docker Configuration
 
 3. After creating the socat container, update the Docker configuration in Jenkins.
 
    - Set the Docker host URI to `tcp://socat-container-ip:2375`.
 
-### Test Connection
+- Test Connection
 
 4. Run a test connection in the Jenkins Docker configuration.
 
