@@ -1,18 +1,15 @@
 # File: complex_code.py
 
-def calculate_factorial(n):
-    if n == 0 or n == 1:
-        return 1
-    else:
-        result = 1
-        for i in range(2, n + 1):
-            result *= i
-        return result
+def fibonacci(n):
+    fib_sequence = [0, 1]
+    while len(fib_sequence) < n:
+        fib_sequence.append(fib_sequence[-1] + fib_sequence[-2])
+    return fib_sequence
 
 def main():
-    num = int(input("Enter a number to calculate its factorial: "))
-    factorial_result = calculate_factorial(num)
-    print(f"The factorial of {num} is: {factorial_result}")
+    # Calculate and print the first 10 numbers in the Fibonacci sequence
+    fibonacci_sequence = fibonacci(10)
+    print("Fibonacci Sequence:", fibonacci_sequence)
 
     # Printing "Hello World" multiple times
     for _ in range(5):
