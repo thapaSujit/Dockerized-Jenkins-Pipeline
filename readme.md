@@ -2,7 +2,7 @@
 ## Build the Jenkins BlueOcean Docker Image (or pull and use the one I built)
 ```
 docker build -t myjenkins-blueocean:2.414.2 .
-
+```
 
 ## Create the network 'jenkins'
 ```
