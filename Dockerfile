@@ -1,4 +1,4 @@
-# Use the official Jenkins base image with JDK 11
+# Use official Jenkins base image with JDK 11
 FROM jenkins/jenkins:2.414.2-jdk11
 
 # Switch to root user to perform system-level operations
