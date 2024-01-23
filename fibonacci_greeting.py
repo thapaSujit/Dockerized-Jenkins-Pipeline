@@ -1,6 +1,6 @@
 # Generates the first 10 numbers of the Fibonacci sequence and prints "Hello World" a number of times equal to the count of even Fibonacci numbers in the sequence
-
-
+print("Hello World!")
+'''
 def fibonacci(n):
     fib_sequence = [0, 1]
     while len(fib_sequence) < n:
@@ -24,3 +24,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    '''
