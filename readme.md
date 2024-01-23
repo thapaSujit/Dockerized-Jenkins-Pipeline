@@ -1,8 +1,3 @@
-
-## YouTube Link
-For the full 1 hour course watch on youtube:
-https://www.youtube.com/watch?v=6YZvp2GwT0A
-
 # Installation
 ## Build the Jenkins BlueOcean Docker Image (or pull and use the one I built)
 ```
@@ -52,3 +47,8 @@ docker inspect <container_id> | grep IPAddress
 ```
 docker pull devopsjourney1/myjenkinsagents:python
 ```
+## Acknowledgments
+
+I would like to express my gratitude to DevOps Journey for creating an incredibly helpful video that greatly assisted me in understanding Jenkins.
+
+[Link to the Helpful Video](https://www.youtube.com/watch?v=6YZvp2GwT0A)
